@@ -1,0 +1,129 @@
+application: buy4square
+version: 4
+runtime: php55
+api_version: 1
+
+handlers:
+
+- url: /favicon.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon.ico
+
+  
+- url: / 
+  script: index.php
+  
+- url: /index\.php
+  script: index.php
+  
+- url: /category\.php
+  script: category.php  
+  
+- url: /ads-details\.php
+  script: ads-details.php
+  
+  
+  
+  
+- url: /login_register\.php
+  script: login_register.php
+  
+- url: /logout\.php
+  script: logout.php
+  
+  
+  
+
+
+- url: /account-home\.php
+  script: account-home.php
+
+- url: /account-payouts\.php
+  script: account-payouts.php
+
+- url: /payment-method\.php
+  script: payment-method.php 
+
+- url: /seller-accounts\.php
+  script: seller-accounts.php   
+  
+  
+- url: /post-ads-photos\.php
+  script: post-ads-photos.php 
+  
+- url: /post-ads\.php
+  script: post-ads.php
+
+  
+  
+- url: /phone-verification\.php
+  script: phone-verification.php
+
+- url: /phone-call\.php
+  script: phone-call.php
+
+- url: /phone-status\.php
+  script: phone-status.php
+
+- url: /phone-twilio\.php
+  script: phone-twilio.php
+
+- url: /phone-twiml\.php
+  script: phone-twiml.php   
+  
+
+  
+  
+- url: /shipping-rates\.php
+  script: shipping-rates.php
+
+- url: /buy\.php
+  script: buy.php
+
+- url: /shopping-cart\.php
+  script: shopping-cart.php
+
+- url: /shipping-address\.php
+  script: shipping-address.php
+
+- url: /print-shipping-label\.php
+  script: print-shipping-label.php   
+  
+
+- url: /sample\.php
+  script: sample.php   
+  
+  
+- url: /label-printer\.php
+  script: label-printer.php 
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+- url: /stripe-connect\.php
+  script: stripe-connect.php  
+  
+  
+- url: /includes/header\.php
+  script: includes/header.php
+  
+- url: /static
+  static_dir: static
+
+- url: /js
+  static_dir: js
+  
+- url: /assets
+  static_dir: assets
+
+- url: /images
+  static_dir: images
